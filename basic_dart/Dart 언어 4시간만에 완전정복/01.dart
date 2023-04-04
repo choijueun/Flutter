@@ -12,3 +12,12 @@ dynamic dynamic1 = 2.0; // 재할당 시 data type 변경 가능
 Map<String, Map<int, List<double>>> testType1 = {};
 var testType2 = {};
 
+/** final & const */
+// type 생략 가능
+final String userid = 'a01';
+final admin = 'AAA';
+const String username = 'CJE';
+const dev = 333;
+// build time 요구 차이
+final DateTime now1 = DateTime.now();   // 정상
+const DateTime now2 = DateTime.now();   // error!: build time을 알고 있어야 함
