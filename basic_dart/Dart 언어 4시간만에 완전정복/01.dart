@@ -30,3 +30,9 @@ String? name2 = 'b01';
 name2 = null;
 // not null 명시
 name1! = 'c01';
+
+/** String Format */
+print('name: ${name}')
+print('name: $name')
+print('${name.runtimeType}')    // O
+print('$name.runtimeType')      // X
