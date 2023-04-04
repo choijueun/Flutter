@@ -21,3 +21,12 @@ const dev = 333;
 // build time 요구 차이
 final DateTime now1 = DateTime.now();   // 정상
 const DateTime now2 = DateTime.now();   // error!: build time을 알고 있어야 함
+
+/** Data Type */
+// non-nullable
+String name1 = 'a01';
+// nullable
+String? name2 = 'b01';
+name2 = null;
+// not null 명시
+name1! = 'c01';
