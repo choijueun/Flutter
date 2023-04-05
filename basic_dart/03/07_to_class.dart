@@ -8,9 +8,11 @@ void main() {
     // [{name: AAA, dept: user}, {name: CTN, dept: R&B}, {name: MNA, dept: R&B}]
 
     
-    final parsedPeople = people.map((x)=>Char(name:x['name']!,dept:x['dept']!));
+    final parsedPeople = people
+        .map((x)=>Char(name:x['name']!,dept:x['dept']!))
+        .where((x)=>x.dept == 'R&B');
     print(parsedPeople);
-    // (Char[name:AAA;dept:user], Char[name:CTN;dept:R&B], Char[name:MNA;dept:R&B])
+    // (Char[name:CTN;dept:R&B], Char[name:MNA;dept:R&B])
 }
 
 class Char {
