@@ -9,5 +9,7 @@ void main() {
 Stream<int> calc(int num) async* {
   for(int i=0; i<5; i++){
     yield num*i;
+    
+    await Future.delayed(Duration(seconds:1));
   }
 }
