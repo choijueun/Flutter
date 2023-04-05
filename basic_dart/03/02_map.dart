@@ -19,4 +19,9 @@ void main() {
   ));
   print(result);
   // {EN Harry Potter: KR 해리 포터, EN Ron Weasley: KR 론 위즐리, EN Hermione Granger: KR 헤르미온느 그레인저}
+
+  Set hello = {'W', 'O', 'R', 'L', 'D'};
+  final world = hello.map((x)=> 'hello $x');
+  print(world);
+  // (hello W, hello O, hello R, hello L, hello D)
 }
