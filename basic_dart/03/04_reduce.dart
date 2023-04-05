@@ -20,6 +20,11 @@ void main() {
         return prev+next;
     });
     print('result: $result3');
+
+    List<String> words = ['A','aa','BBB'];
+    final sentence = words.reduce((prev,next)=>prev+next);
+    // AaaBBB
+    // element와 같은 data type return해주어야 함!
 }
 
 /*
