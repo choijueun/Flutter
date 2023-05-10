@@ -1,4 +1,5 @@
 /** VARIABLE */
+void main(){
 // 명시적
 String str1 = 'String';
 int int1 = 3;
@@ -24,15 +25,16 @@ const DateTime now2 = DateTime.now();   // error!: build time을 알고 있어�
 
 /** Data Type */
 // non-nullable
-String name1 = 'a01';
+String name = 'a01';
 // nullable
 String? name2 = 'b01';
 name2 = null;
 // not null 명시
-name1! = 'c01';
+name! = 'c01';
 
 /** String Format */
 print('name: ${name}')
 print('name: $name')
 print('${name.runtimeType}')    // O
 print('$name.runtimeType')      // X
+}
