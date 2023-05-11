@@ -1,3 +1,4 @@
+void main(){
 /** return */
 String str1 = 'A';
 String str2 = 'B';
@@ -22,7 +23,7 @@ num1--;
 num1 += 1;
 num1 -= 2;
 num1 *= 3;
-num1 /= -1;
+num1 /= 12;
 
 String? str3;
 // null이면 재할당, 아니면 그대로
@@ -40,3 +41,4 @@ print(str3);
 /** type */
 str3 is String; // true
 num1 is double; // false
+}
